@@ -8,9 +8,20 @@
   "dependencies": {
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
-    "express": "~4.16.1",
+    "ejs": "~2.6.1",
+    "express": "^4.16.4",
+    "express-session": "^1.17.0",
     "http-errors": "~1.6.3",
-    "jade": "~1.11.0",
-    "morgan": "~1.9.1"
+    "logger": "0.0.1",
+    "moment": "^2.24.0",
+    "morgan": "~1.9.1",
+    "mysql": "^2.17.1",
+    "request": "^2.88.0",
+    "sha256": "^0.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.7.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2"
   }
 }

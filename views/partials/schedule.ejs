@@ -1,0 +1,50 @@
+<% if (schedule.length > 1) { %>
+<table>
+    <tr>
+        <th>Date</th>
+        <th>Start time</th>
+        <th>Duration</th>
+        <th>Booked by</th>
+        <!-- TODO: -->
+        <th>add new slot</th>
+    </tr>
+    <% for (rating of ratings) { %>
+    <div class="form-group">
+        <tr>
+            <td>
+                <div class="form-control m-1" id='schedule<%= schedule.id %>'>
+                    <%= schedule.open_date %>
+                </div>   
+            </td>
+
+            <td>
+                <div class="form-control m-1" value="<%= schedule.start_time %>"> 
+                     <%= schedule.start_time %>
+                </div> 
+            </td>
+
+
+           
+            <td>
+                <div class="form-control m-1" value="<%= schedule.start_time %>"> 
+                     <%= schedule.start_time %>
+                </div> 
+            </td>
+
+            
+            <td>
+                <div class="form-control m-1" value="<%= schedule.start_time %>"> 
+                     <%= schedule.start_time %>
+                </div> 
+            </td>
+            <td>
+                <button class="deleteApt btn btn-primary m-1"">Delete</button>
+            </td>
+
+        </tr>
+    </div>
+    <% } %>
+</table>
+<% } else { %>
+<p>You don't have any ratings yet.</p>
+<% } %>
